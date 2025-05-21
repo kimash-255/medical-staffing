@@ -10,7 +10,7 @@ const Testimonial = () => {
     arrows: false,
     dots: false,
     autoplay: true,
-    autoplaySpeed: 5000, // Change every 5 seconds
+    autoplaySpeed: 5000,
     infinite: true,
     responsive: [
       { breakpoint: 1100, settings: { slidesToShow: 1 } },
@@ -20,24 +20,21 @@ const Testimonial = () => {
   };
 
   return (
-    // <!--testimonial-section-->
-    <section className="ttm-row zero_padding-section testimonial-section-homepage clearfix">
-      <div className="container">
-        <div className="row g-0">
+    <section className="ttm-row zero_padding-section testimonial-section-homepage clearfix" style={{ overflow: 'hidden' }}>
+      <div className="container" style={{ maxWidth: '100%', overflow: 'hidden' }}>
+        <div className="row g-0" style={{ margin: 0 }}>
           <div className="col-xl-5 col-lg-12">
             <div className="box-shadow ttm-bg ttm-col-bgcolor-yes ttm-left-span ttm-bgcolor-skincolor spacing-21">
               <div className="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
               <div className="layer-content">
                 <div className="row">
                   <div className="col-lg-12">
-                    {/* <!-- section title --> */}
                     <div className="section-title mb-18">
                       <div className="title-header">
                         <h3 className="ttm-textcolor-white">PATIENTS TESTIMONIALS</h3>
                         <h2 className="title">What Are They Saying</h2>
                       </div>
                     </div>
-                    {/* <!-- section title end --> */}
                   </div>
                 </div>
                 <div className="ttm-horizontal_sep mt-5"></div>
@@ -56,14 +53,14 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-7 col-lg-12 pt-60 res-1199-pt-0">
-            <div className="box-shadow ttm-bg ttm-col-bgimage-yes ttm-right-span col-bg-img-eleven spacing-22">
+          <div className="col-xl-7 col-lg-12 pt-60 res-1199-pt-0" style={{ overflow: 'hidden' }}>
+            <div className="box-shadow ttm-bg ttm-col-bgimage-yes ttm-right-span col-bg-img-eleven spacing-22" style={{ overflow: 'hidden' }}>
               <div className="ttm-col-wrapper-bg-layer ttm-bg-layer ttm-bgcolor-darkgrey"></div>
-              <div className="layer-content">
-                <div className="row">
-                  <Slider {...settings} className="slick_slider g-0">
+              <div className="layer-content" style={{ overflow: 'hidden' }}>
+                <div className="row" style={{ margin: 0 }}>
+                  <Slider {...settings} className="slick_slider" style={{ width: '100%', overflow: 'hidden' }}>
                     {testimonialsData.map((testimonial) => (
-                      <div className="testimonials style5" key={testimonial.id}>
+                      <div className="testimonials style5" key={testimonial.id} style={{ padding: '0 15px' }}>
                         <div className="testimonial-content">
                           <div className="row">
                             <div className="col-md-3 align-self-center">
@@ -98,7 +95,6 @@ const Testimonial = () => {
         </div>
       </div>
     </section>
-    // {/* <!--testimonial-section-end--> */}
   );
 };
 

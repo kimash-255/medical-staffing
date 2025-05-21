@@ -105,11 +105,11 @@ const Footer = () => {
                       <li><Link to="/">Home</Link></li>
                       <li><Link to="/about">About Us</Link></li>
                       <li><Link to="/careers">Careers</Link></li>
-                      <li><Link to="/blog">Blog</Link></li>
+                      {/* <li><Link to="/blog">Blog</Link></li> */}
                       <li><Link to="/contact">Contact</Link></li>
                     </ul>
                     <ul className="menu-footer-service-link menu">
-                      <li><Link to="/faq">FAQ's</Link></li>
+                      {/* <li><Link to="/faq">FAQ's</Link></li> */}
                       {serviceDetailData.slice(0, 3).map((s) => (
                         <li key={s.slug}>
                           <Link to={`/services/${s.slug}`}>{s.title}</Link>
@@ -129,14 +129,14 @@ const Footer = () => {
                       <img className="img-fluid" src="/images/footer-post-01.jpg" width="72" height="80" alt="post-img" />
                       <div className="post-detail">
                         <span className="post-date">April 17, 2021</span>
-                        <Link to="/blog">Benefits of Travel Nursing</Link>
+                        <Link to="/">Benefits of Travel Nursing</Link>
                       </div>
                     </li>
                     <li>
                       <img className="img-fluid" src="/images/footer-post-02.jpg" width="72" height="80" alt="post-img" />
                       <div className="post-detail">
                         <span className="post-date">March 05, 2021</span>
-                        <Link to="/blog">How to Get Started in Healthcare Staffing</Link>
+                        <Link to="/">How to Get Started in Healthcare Staffing</Link>
                       </div>
                     </li>
                   </ul>

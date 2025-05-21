@@ -10,11 +10,13 @@ import ServicesPage from "./pages/services/index.jsx";
 import Single from "./components/services/single.jsx";
 import CareerPage from "./pages/career/index.jsx";
 import ContactPage from "./pages/contact/index.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
