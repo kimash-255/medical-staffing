@@ -3,23 +3,29 @@ import { Link } from "react-router-dom";
 
 const Punchline = () => {
   return (
-    // <!--consultant-section-->
-    <section className="ttm-row consultant-section bg-img2 ttm-bgcolor-dark ttm-textcolor-white ttm-bg ttm-bgimage-yes clearfix">
+    <section
+      className="ttm-row consultant-section bg-img2 ttm-bgcolor-dark ttm-textcolor-white ttm-bg ttm-bgimage-yes clearfix relative"
+      style={{ marginBottom: "5rem" }}
+    >
+      {/* Overlay */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          backgroundColor: "rgba(93, 156, 172, 0.5)",
+          zIndex: 10,
+        }}
+      ></div>
+
       <div className="ttm-row-wrapper-bg-layer ttm-bg-layer"></div>
-      <div className="container">
+
+      <div className="container relative" style={{ zIndex: 20 }}>
         <div className="row row-title">
-          <div className="col-lg-12 m-auto">
-            {/* <!-- section title --> */}
-            <div className="section-title title-style-center_text style2">
-              <div className="title-header">
-                <h3>Expert Healthcare Staffing Solutions</h3>
-                <h2 className="title">
-                  We Connect <span>Top Medical Professionals</span> With{" "}
-                  <span>Your Facility</span>
-                </h2>
-              </div>
-            </div>
-            {/* <!-- section title end --> */}
+          <div className="col-lg-12 m-auto text-center">
+            <h3>Tell Us About Your Friends</h3>
+            <h2>
+              Refer your friends and get a bonus today
+            </h2>
             <div className="consultant-doc-info d-sm-flex justify-content-center align-items-center">
               <div className="pr-30 res-575-pr-0 text-center">
                 <Link
@@ -27,7 +33,7 @@ const Punchline = () => {
                   to="/contact"
                   tabIndex={0}
                 >
-                  Refer a Friend
+                  REFER A FRIEND
                 </Link>
               </div>
             </div>
@@ -35,7 +41,7 @@ const Punchline = () => {
         </div>
       </div>
     </section>
-    // <!--consultant-section-->
   );
 };
+
 export default Punchline;

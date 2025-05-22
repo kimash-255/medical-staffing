@@ -5,28 +5,73 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Career = () => {
   const jobs = [
-    {
-      title: "Licensed Practical Nurse (LPN)",
-      description:
-        "Deliver basic medical care, monitor patient health, and support RNs and doctors in clinical settings.",
-      link: "/contact",
-    },
+    // Nursing Jobs
     {
       title: "Certified Nursing Assistant (CNA)",
       description:
-        "Assist patients with daily activities, provide personal care, and report changes in patient conditions.",
+        "Assist residents with daily living activities, provide essential care, and support nursing teams.",
+      link: "/contact",
+    },
+    {
+      title: "Community-Based Residential Facility (CBRF) Caregiver",
+      description:
+        "Provide compassionate care and assistance to residents, ensuring their safety and well-being.",
+      link: "/contact",
+    },
+    {
+      title: "Medication Aide (CMA, TMA, QMA)",
+      description:
+        "Administer medications and maintain accurate documentation in long-term care settings.",
+      link: "/contact",
+    },
+    {
+      title: "Licensed Practical Nurse (LPN)",
+      description:
+        "Deliver direct patient care, manage medications, and collaborate with registered nurses.",
       link: "/contact",
     },
     {
       title: "Registered Nurse (RN)",
       description:
-        "Provide direct patient care, administer medication, and coordinate with interdisciplinary teams.",
+        "Lead patient care initiatives, oversee medical treatments, and support healthcare teams.",
+      link: "/contact",
+    },
+
+    // Allied Therapy Jobs
+    {
+      title: "Physical Therapist (PT)",
+      description:
+        "Help patients improve movement, manage pain, and recover from injuries.",
       link: "/contact",
     },
     {
-      title: "Patient Sitters",
+      title: "Occupational Therapist (OT)",
       description:
-        "Provide non-medical support and companionship to patients needing observation and comfort.",
+        "Assist patients in regaining independence through daily activity training and therapy.",
+      link: "/contact",
+    },
+    {
+      title: "Respiratory Therapist (RT)",
+      description:
+        "Provide critical care and treatment for patients with breathing disorders.",
+      link: "/contact",
+    },
+    {
+      title: "Speech-Language Pathologist (SLP)",
+      description:
+        "Diagnose and treat speech, communication, and swallowing disorders.",
+      link: "/contact",
+    },
+    {
+      title: "Physical Therapist Assistant (PTA)",
+      description:
+        "Support physical therapists by providing therapy treatments and exercises to patients.",
+      link: "/contact",
+    },
+    {
+      title: "Occupational Therapist Assistant (OTA/COTA)",
+      description:
+        "Work under occupational therapists to provide hands-on therapy and functional training.",
       link: "/contact",
     },
   ];
@@ -39,7 +84,7 @@ const Career = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000, // 4 seconds per slide
+    autoplaySpeed: 4000,
   };
 
   return (
@@ -68,7 +113,7 @@ const Career = () => {
             </div>
           </div>
 
-          {/* Right Column: Job Slider replacing old Project Details */}
+          {/* Right Column: Job Slider */}
           <div className="col-lg-6">
             <div className="position-relative">
               <div className="mb-30 res-991-mt-30">
@@ -89,11 +134,11 @@ const Career = () => {
                 </Slider>
               </div>
 
-              {/* Static List: keep as-is for design consistency */}
+              {/* Static List */}
               <ul className="ttm-list style4">
                 <li>
                   <h3>Location</h3>
-                  <p>New York United States</p>
+                  <p>New York, United States</p>
                 </li>
                 <li>
                   <h3>Clients</h3>
@@ -161,7 +206,7 @@ const Career = () => {
                   className="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor"
                   href="/contact"
                 >
-                  Contact Us
+                  Apply Now
                 </a>
                 <button className="ttm-btn ttm-btn-size-lg ttm-btn-shape-square ttm-btn-style-border ttm-btn-style-fill ttm-btn-color-grey">
                   <i className="icon-share"></i>

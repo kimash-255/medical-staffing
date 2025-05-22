@@ -51,11 +51,11 @@ const WhyChooseUs = () => {
                     </div>
                     <div class="featured-content">
                       <div class="featured-title">
-                        <h3>Certified Talent Pool</h3>
+                        <h3>HEALTHCARE OPPORTUNITIES</h3>
                       </div>
                       <div class="featured-desc">
                         <p>
-                          All professionals undergo thorough credential checks.
+                         Every candidate undergoes rigorous credential verification to ensure quality and compliance.
                         </p>
                       </div>
                     </div>
@@ -70,11 +70,11 @@ const WhyChooseUs = () => {
                     </div>
                     <div class="featured-content">
                       <div class="featured-title">
-                        <h3>Fast Placement</h3>
+                        <h3>STAFFING SOLUTIONS</h3>
                       </div>
                       <div class="featured-desc">
                         <p>
-                          We place qualified staff in as little as 24–48 hours.
+                         We rapidly deploy qualified healthcare professionals within 24 to 48 hours to meet your urgent staffing needs.
                         </p>
                       </div>
                     </div>

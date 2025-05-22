@@ -74,53 +74,57 @@ const Header = () => {
                         </span>
                       </div>
 
-                      <nav
-                        className={`main-menu menu-mobile ${
-                          isMobileMenuOpen && "show"
-                        } `}
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        id="menu"
-                      >
-                        <ul className="menu">
-                          <li className="mega-menu-item">
-                            <Link to="/" className="mega-menu-link">
-                              Home
-                            </Link>
-                          </li>
-                          <li className="mega-menu-item">
-                            <Link to="/about" className="mega-menu-link">
-                              About
-                            </Link>
-                          </li>
+                     <nav
+  className={`main-menu menu-mobile ${isMobileMenuOpen ? "show" : ""}`}
+  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+  id="menu"
+>
+  <ul
+    className="menu"
+    style={{
+      display: 'flex',
+      justifyContent: 'center',
+      gap: '20px', // space between links
+      paddingLeft: 150,
+      margin: 0,
+      listStyle: 'none',
+    }}
+  >
+    <li className="mega-menu-item">
+      <Link to="/" className="mega-menu-link">
+        Home
+      </Link>
+    </li>
+    <li className="mega-menu-item">
+      <Link to="/about" className="mega-menu-link">
+        About
+      </Link>
+    </li>
+    <li className="mega-menu-item">
+      <Link to="/services" className="mega-menu-link">
+        Services
+      </Link>
+      <ul className="mega-submenu">
+        {serviceDetailData.map((s) => (
+          <li key={s.slug}>
+            <Link to={`/services/${s.slug}`}>{s.title}</Link>
+          </li>
+        ))}
+      </ul>
+    </li>
+    <li className="mega-menu-item">
+      <Link to="/careers" className="mega-menu-link">
+        Careers
+      </Link>
+    </li>
+    <li className="mega-menu-item">
+      <Link to="/contact" className="mega-menu-link">
+        Contact
+      </Link>
+    </li>
+  </ul>
+</nav>
 
-                          <li className="mega-menu-item">
-                            <Link to="/services" className="mega-menu-link">
-                              Services
-                            </Link>
-                            <ul className="mega-submenu">
-                              {serviceDetailData.map((s) => (
-                                <li key={s.slug}>
-                                  <Link to={`/services/${s.slug}`}>
-                                    {s.title}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </li>
-
-                          <li className="mega-menu-item">
-                            <Link to="/careers" className="mega-menu-link">
-                              Careers
-                            </Link>
-                          </li>
-
-                          <li className="mega-menu-item">
-                            <Link to="/contact" className="mega-menu-link">
-                              Contact
-                            </Link>
-                          </li>
-                        </ul>
-                      </nav>
                     </div>
                   </div>
 

@@ -26,7 +26,7 @@ const Hero = () => {
           style={{
             position: "absolute",
             inset: 0,
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            backgroundColor: "rgba(93, 156, 172, 0.5)",
             zIndex: 10,
           }}
         ></div>
@@ -35,40 +35,38 @@ const Hero = () => {
         <div className="container relative z-20 h-full flex items-end pb-16">
           <div className="row w-full">
             <div className="col-lg-8 col-md-12 col-sm-12">
-              <div className="slide__content--headings text-white">
-                <h2
-                  className="ttm-textcolor-white text-3xl font-bold"
-                  data-animation="fadeInLeft"
-                  data-delay="0.7s"
-                  data-duration="0.8s"
-                >
-                  Medical Staffing Solutions
-                </h2>
-                <h5
-                  className="ttm-textcolor-white text-xl mt-2"
-                  data-animation="fadeInLeft"
-                  data-delay="0.9s"
-                  data-duration="0.8s"
-                >
-                  Trusted medical staffing connecting skilled nurses and allied
-                  health professionals with facilities for per diem to
-                  long-term, local and travel assignments—ensuring consistent,
-                  quality patient care.
-                </h5>
-                <div
-                  className="pt-6"
-                  data-animation="fadeInUp"
-                  data-delay="0.6s"
-                  data-duration="0.5s"
-                >
-                  <Link
-                    className="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor"
-                    to="/contact"
-                  >
-                    Apply Today
-                  </Link>
-                </div>
-              </div>
+             <div className="slide__content--headings text-white mt-20 sm:mt-6">
+  <h2
+    className="ttm-textcolor-white text-2xl sm:text-5xl font-bold mt-6 leading-tight !important"
+    data-animation="fadeInLeft"
+    data-delay="0.7s"
+    data-duration="0.8s"
+  >
+    Medical Staffing Solutions
+  </h2>
+  <h6
+    className="ttm-textcolor-white text-sm sm:text-xs mt-4 leading-relaxed !important"
+    data-animation="fadeInLeft"
+    data-delay="0.9s"
+    data-duration="0.8s"
+  >
+    Trusted medical staffing connecting skilled nurses and allied health professionals with facilities for per diem to long-term, local and travel assignments—ensuring consistent, quality patient care.
+  </h6>
+  <div
+    className="pt-6"
+    data-animation="fadeInUp"
+    data-delay="0.6s"
+    data-duration="0.5s"
+  >
+    <Link
+      className="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor"
+      to="/contact"
+    >
+      Apply Today
+    </Link>
+  </div>
+</div>
+
             </div>
           </div>
         </div>

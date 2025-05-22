@@ -18,8 +18,8 @@ const Welcome = () => {
               <div class="featured-content">
                 <div class="featured-title">
                   <h3>
-                    <Link to="/about" tabindex="0">
-                      Opportunities for Healthcare Professionals
+                    <Link to="/careers" tabindex="0">
+                      Opportunities for Healthcare Careers
                     </Link>
                   </h3>
                 </div>
@@ -31,7 +31,7 @@ const Welcome = () => {
                 </div>
               </div>
               <div class="featured-bottom">
-                <Link class="" to="/about" tabindex="0">
+                <Link class="" to="/careers" tabindex="0">
                   <i class="ti ti-arrow-top-right"></i>
                 </Link>
               </div>
@@ -73,21 +73,21 @@ const Welcome = () => {
                   <i class="flaticon flaticon-defribillator"></i>
                 </div>
               </div>
-              <div class="featured-content">
-                <div class="featured-title">
-                  <h3>
-                    <Link to="/about" tabindex="0">
-                      Growth Support for Staffing Partners
-                    </Link>
-                  </h3>
-                </div>
-                <div class="featured-desc">
-                  <p>
-                    Expand your reach and connect with new clients through
-                    streamlined collaboration and demand-driven placements.
-                  </p>
-                </div>
-              </div>
+              <div className="featured-content">
+  <div className="featured-title">
+    <h3>
+      <Link to="/about" tabIndex={0}>
+        Collaborate for Success
+      </Link>
+    </h3>
+  </div>
+  <div className="featured-desc">
+    <p>
+      Impacting the Healthcare Staffing Industry Together
+    </p>
+  </div>
+</div>
+
               <div class="featured-bottom">
                 <Link class="" to="/about" tabindex="0">
                   <i class="ti ti-arrow-top-right"></i>
